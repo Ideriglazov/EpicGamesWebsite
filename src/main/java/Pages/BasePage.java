@@ -28,7 +28,7 @@ public class BasePage {
         findElementByXpath(xpath).sendKeys(text);
     }
 
-    protected boolean elementExists(String xpath) {
+    public boolean elementExists(String xpath) {
         try {
             //findElementByXpath(xpath);
             webDriver.findElement(By.xpath(xpath));
